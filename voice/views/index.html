@@ -1,0 +1,39 @@
+<!doctype html>
+<html ng-app="myApp"> 
+    
+<head>
+    <title>Water Meter</title>
+    <link rel="stylesheet" type="text/css" href="/stylesheets/style.css" />
+   <!-- <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.19/angular.min.js"></script>
+     <script>
+       function waterMes() {
+	 console.log("in waterMes");
+           document.getElementById("message").innerHTML = "Great job!";
+         
+       }
+     </script>-->
+
+</head>
+        
+<body onload="waterMes()">  
+    <div ng-controller="myController">
+        <h2 id="welcomeText">Welcome <%= username %>!</h2>
+        <a id="logoutLink" href="/logout">Logout</a>
+        <a id="editLink" href="/user">Edit User</a>
+    </div>
+    <hr>
+    <span id="indexMsg">
+        <%= msg %>
+    </span>
+    <hr>
+    <span id="listText">
+    HOW MUCH WATER HAVE YOU HAD TODAY?
+        <br><%= cup %> cups of water
+        <p ng-model="message"></p>
+       </span>
+    <script src="http://code.angularjs.org/1.2.9/angular.min.js"></script>
+    <script src="/javascripts/my_app.js"></script>
+</body>
+      
+</html>
+
